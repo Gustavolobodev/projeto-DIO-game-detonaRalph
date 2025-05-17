@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    
+    <!-- Fontes do Google - Estilo retrô -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Folhas de estilo -->
+    <link rel="stylesheet" href="./src/style/reset.css"> <!-- Reset CSS -->
+    <link rel="stylesheet" href="./src/style/main.css"> <!-- Estilos principais -->
+</head>
+
+<body>
+    <!-- Container principal do jogo -->
+    <div class="container">
+        <!-- Menu superior com tempo, pontuação e vidas -->
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: red;">Time left</h2>
+                <h2 id="time-left">0</h2> <!-- Contador de tempo -->
+            </div>
+            <div class="menu-score">
+                <h2 style="color: red;">Your Score</h2>
+                <h2 id="score">0</h2> <!-- Mostrador de pontuação -->
+            </div>
+            <div class="menu-lives">
+                <img src="src/images/player.png" alt="Foto do jogador" height="60px">
+                <h2>x3</h2> <!-- Contador de vidas -->
+            </div>
+        </div>
+
+        <!-- Tabuleiro do jogo - 3x3 -->
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>    
+            </div>
+            <!-- Segunda linha -->
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <!-- Terceira linha -->
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tela de Game Over (inicialmente oculta) -->
+    <div class="game-overlay" id="game-over-message" style="display: none;">
+        <div class="game-over-content">
+            <h2>GAME OVER!</h2>
+            <p>Sua pontuação: <span id="final-score">0</span></p>
+            <button id="restart-button">JOGAR NOVAMENTE</button>
+        </div>
+    </div>
+
+    <!-- Rodapé com créditos -->
+    <footer class="game-footer">
+        <p>Desenvolvido <a href="https://github.com/Gustavolobodev">Gustavo Lobo</a> - 2025</p>
+    </footer>
+
+    <!-- Script principal (carregado com defer para melhor performance) -->
+    <script src="src/scripts/main.js" defer></script>
+</html>
