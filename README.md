@@ -10,7 +10,7 @@ Jogo web interativo onde o objetivo é clicar no Ralph (personagem do filme "Det
 **Como jogar**:
 - Clique nos quadrados vermelhos que contêm o Ralph
 - Cada acerto soma pontos ao seu placar
-- Você tem 60 segundos para marcar o máximo de pontos
+- Você tem 30 segundos para marcar o máximo de pontos
 
 ## ✨ Funcionalidades
 - ✅ Sistema de pontuação em tempo real
@@ -48,7 +48,7 @@ projeto-DIO-game-detonaRalph/
 │       └── reset.css    # Reset de estilos
 └── index.html           # Página principal
 📌 Regras do Jogo
-⏳ Tempo inicial: 60 segundos
+⏳ Tempo inicial: 30 segundos
 
 🔴 Ralph aparece aleatoriamente nos quadrados
 
